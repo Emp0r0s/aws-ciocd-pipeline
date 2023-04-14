@@ -14,11 +14,6 @@ def client():
 def test_index(client):
     response = client.get('/')
     assert b'Welcome to the calculator!' in response.data
-    
-def test_index(client):
-    response = client.get('/saurabh')
-    assert b'hello world from saurabh' in response.data 
-
 
 def test_add(client):
     response = client.post('/add', data=dict(num1=5, num2=10))
