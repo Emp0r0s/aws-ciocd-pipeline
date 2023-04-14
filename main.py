@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return 'Welcome to the calculator!'
+
 @app.route('/saurabh')
 def index():
     return 'hello world from saurabh'
