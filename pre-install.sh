@@ -1,3 +1,5 @@
 #!/bin/bash
 pip install -r "/home/ec2-user/requirements.txt"
-nohup python main.py > log.txt 2>&1 &
+export FLASK_APP=app.py
+export FLASK_ENV=production
+nohup flask run &
