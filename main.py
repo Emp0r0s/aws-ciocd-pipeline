@@ -6,10 +6,6 @@ app = Flask(__name__)
 def index():
     return 'Welcome to the calculator!'
 
-@app.route('/saurabh')
-def index():
-    return 'hello world from saurabh'
-
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     if request.method == 'POST':
