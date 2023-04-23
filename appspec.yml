@@ -8,3 +8,7 @@ hooks:
     - location: pre-install.sh
       timeout: 1800
       runas: root
+  ApplicationStart:
+    - location: start.sh
+      timeout: 1800
+      runas: root
